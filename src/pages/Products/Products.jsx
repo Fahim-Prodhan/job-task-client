@@ -11,9 +11,9 @@ import { Helmet } from 'react-helmet';
 const Products = () => {
     const [GridActive, setGridActive] = useState(true)
     const [TableActive, setTableActive] = useState(false)
-    const [posts, setPosts] = useState([])
+    const [Products, setProducts] = useState([])
     const [count, SetCount] = useState(0)
-    const [itemsPerPage, setItemsPerPage] = useState(4)
+    const [itemsPerPage, setItemsPerPage] = useState(8)
     const [currentPage, setCurrentPage] = useState(1)
     const [search, setSearch] = useState('')
     const [loadingData, setLoadingData] = useState(true)
@@ -37,24 +37,19 @@ const Products = () => {
         e.preventDefault()
         const text = e.target.search.value
         setSearch(text)
+        setCurrentPage(1)
     }
 
     useEffect(() => {
        
         axios.get(`${baseUrl}/api/products?page=${currentPage - 1}&size=${itemsPerPage}&search=${search}`)
             .then(res => {
-                setPosts(res.data)
+                setProducts(res.data)
                 setLoadingData(false)
             })
     }, [currentPage, itemsPerPage, search])
 
-    useEffect(() => {
-        axios.get(`${baseUrl}/postCounts?search=${search}`)
-            .then(res => {
-                SetCount(res.data.count)
-                setLoadingData(false)
-            })
-    }, [search])
+
 
     const handleGrid = () => {
         setGridActive(true)
@@ -77,9 +72,9 @@ const Products = () => {
     return (
         <div className="max-w-sm px-6 md:max-w-3xl md:px-8 lg:max-w-7xl mx-auto lg:mt-12 mb-12">
             <Helmet>
-                <title>volunnet | Need Volunteer</title>
+                <title>Estarch | all products</title>
             </Helmet>
-            <h1 className='text-center my-12 bg-base-200 text-3xl py-4 font-bold'>All Volunteer Posts</h1>
+            <h1 className='text-center my-12 bg-base-200 text-3xl py-4 font-bold'>All Products</h1>
             <div className='flex my-4 gap-4 flex-wrap'>
 
                 <button onClick={handleGrid} className='btn text-xl'><IoGridSharp /></button>
@@ -94,15 +89,15 @@ const Products = () => {
             </div>
             <div className={`md:grid-cols-2 gap-6 ${GridActive ? 'grid' : 'hidden'}`}>
                 {
-                    posts.map(post => <div key={post._id} className="flex card shadow-lg animate__animated animate__zoomIn">
+                    Products.map(p => <div key={p._id} className="flex card shadow-lg animate__animated animate__zoomIn">
                         <div className="hero-content flex-col lg:flex-row">
-                            <img src={post.image} className="max-w-[270px] rounded-lg shadow-2xl" />
+                            <img src={p.image} className="max-w-[270px] rounded-lg shadow-2xl" />
                             <div>
-                                <h1 className="text-xl font-bold pb-4 text-[#7077A1]">{post.title}</h1>
+                                <h1 className="text-xl font-bold pb-4 text-[#7077A1]">{p.title}</h1>
                                 <div>
-                                    <p className='text-[17px]'><span className='font-bold'>Deadline:</span> {post.deadline}</p>
-                                    <p className='text-[17px]'><span className='font-bold'>Location:</span> {post.location}</p>
-                                    <Link to={`/details/${post._id}`}><button className='text-[18px] text-white bg-[#424769] px-3 py-1 mt-2 rounded-md'>View Details</button></Link>
+                                    <p className='text-[17px]'><span className='font-bold'>Deadline:</span> {p.deadline}</p>
+                                    <p className='text-[17px]'><span className='font-bold'>Location:</span> {p.location}</p>
+                                    <Link to={`/details/${p._id}`}><button className='text-[18px] text-white bg-[#424769] px-3 py-1 mt-2 rounded-md'>View Details</button></Link>
                                 </div>
                             </div>
                         </div>
@@ -127,29 +122,29 @@ const Products = () => {
                         <tbody>
                             {/* row 1 */}
                             {
-                                posts.map((post) =>
-                                    <tr className='animate__animated animate__zoomIn' key={post._id}>
+                                Products.map((p) =>
+                                    <tr className='animate__animated animate__zoomIn' key={p._id}>
                                         <td>
                                             <div className="flex items-center gap-3">
                                                 <div className="avatar">
                                                     <div className="mask mask-squircle w-12 h-12">
-                                                        <img src={post.image} alt="Avatar Tailwind CSS Component" />
+                                                        <img src={p.image} alt="Avatar Tailwind CSS Component" />
                                                     </div>
                                                 </div>
                                             </div>
                                         </td>
                                         <td>
-                                            <div className="font-bold text-[#7077A1]">{post.title}</div>
+                                            <div className="font-bold text-[#7077A1]">{p.title}</div>
                                         </td>
                                         <td>
-                                            {post.category}
+                                            {p.category}
                                         </td>
                                         <td>
-                                            {post.location}
+                                            {p.location}
                                         </td>
-                                        <td>{post.deadline}</td>
+                                        <td>{p.deadline}</td>
                                         <th>
-                                            <Link to={`/details/${post._id}`}> <button className="btn text-white bg-[#424769]">View Details</button></Link>
+                                            <Link to={`/details/${p._id}`}> <button className="btn text-white bg-[#424769]">View Details</button></Link>
                                         </th>
                                     </tr>
                                 )
@@ -159,17 +154,7 @@ const Products = () => {
                     </table>
                 </div>
             </div>
-            {/* pagination */}
-            <div className='flex justify-center mt-12 gap-4'>
-                <button onClick={handlePrev} className="btn">Prev</button>
-                {
-                    pages.map(page => <button
-                        onClick={() => setCurrentPage(page)}
-                        className={`btn  ${page == currentPage ? 'bg-[#F6B17A] text-white' : ''}`}
-                        key={page}> {page}</button>)
-                }
-                <button onClick={handleNext} className="btn">Next</button>
-            </div>
+          
         </div>
     );
 };
