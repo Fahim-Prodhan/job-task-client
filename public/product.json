@@ -6,6 +6,7 @@
     "description": "A high-performance smartphone with a 6.5-inch display and 128GB storage.",
     "price": 699.99,
     "category": "Mobile",
+    "brand":"Samsung",
     "ratings": 4.7,
     "createdAt": "2024-08-01T10:00:00Z"
   },
@@ -16,6 +17,7 @@
     "description": "A feature-rich smartwatch with heart rate monitoring and GPS.",
     "price": 249.99,
     "category": "Smartwatch",
+    "brand":"",
     "ratings": 4.8,
     "createdAt": "2024-08-02T11:00:00Z"
   },
@@ -26,6 +28,7 @@
     "description": "A 27-inch Ultra HD monitor with stunning picture quality.",
     "price": 399.99,
     "category": "Monitor",
+    "brand":"HP",
     "ratings": 4.6,
     "createdAt": "2024-08-03T12:00:00Z"
   },
@@ -36,6 +39,7 @@
     "description": "A durable mechanical keyboard with customizable RGB lighting.",
     "price": 89.99,
     "category": "Keyboard",
+    "brand":"A4Tech",
     "ratings": 4.5,
     "createdAt": "2024-08-04T13:00:00Z"
   },
@@ -46,6 +50,7 @@
     "description": "Noise-cancelling wireless headphones with 20-hour battery life.",
     "price": 199.99,
     "category": "Headphone",
+    "brand":"Boat",
     "ratings": 4.7,
     "createdAt": "2024-08-05T14:00:00Z"
   },
@@ -56,6 +61,7 @@
     "description": "Compact true wireless earbuds with superior sound quality.",
     "price": 129.99,
     "category": "Earpods",
+    "brand":"Boat",
     "ratings": 4.6,
     "createdAt": "2024-08-06T15:00:00Z"
   },
@@ -66,6 +72,7 @@
     "description": "A smartphone with a 6.1-inch display, 64GB storage, and dual cameras.",
     "price": 599.99,
     "category": "Mobile",
+    "brand":"Samsung",
     "ratings": 4.5,
     "createdAt": "2024-08-07T16:00:00Z"
   },
@@ -76,6 +83,7 @@
     "description": "A smartwatch designed for fitness enthusiasts with multiple health tracking features.",
     "price": 199.99,
     "category": "Smartwatch",
+    "brand":"Realme",
     "ratings": 4.7,
     "createdAt": "2024-08-08T17:00:00Z"
   },
@@ -86,6 +94,7 @@
     "description": "A 34-inch curved gaming monitor with a 144Hz refresh rate.",
     "price": 499.99,
     "category": "Monitor",
+    "brand":"HP",
     "ratings": 4.8,
     "createdAt": "2024-08-09T18:00:00Z"
   },
@@ -96,6 +105,7 @@
     "description": "A wireless mechanical keyboard with a sleek design and tactile keys.",
     "price": 109.99,
     "category": "Keyboard",
+    "brand":"A4Tech",
     "ratings": 4.6,
     "createdAt": "2024-08-10T19:00:00Z"
   },
@@ -106,6 +116,7 @@
     "description": "Comfortable over-ear headphones with immersive sound quality.",
     "price": 149.99,
     "category": "Headphone",
+    "brand":"Boat",
     "ratings": 4.5,
     "createdAt": "2024-08-11T20:00:00Z"
   },
@@ -116,6 +127,7 @@
     "description": "True wireless earbuds with active noise cancellation.",
     "price": 159.99,
     "category": "Earpods",
+    "brand":"Boat",
     "ratings": 4.7,
     "createdAt": "2024-08-12T21:00:00Z"
   },
@@ -126,6 +138,7 @@
     "description": "A powerful smartphone with a 6.8-inch display and 256GB storage.",
     "price": 899.99,
     "category": "Mobile",
+    "brand":"Samsung",
     "ratings": 4.9,
     "createdAt": "2024-08-13T22:00:00Z"
   },
@@ -136,6 +149,7 @@
     "description": "A hybrid smartwatch with analog design and smart features.",
     "price": 179.99,
     "category": "Smartwatch",
+    "brand":"Realme",
     "ratings": 4.4,
     "createdAt": "2024-08-14T23:00:00Z"
   },
@@ -146,6 +160,7 @@
     "description": "A 34-inch 4K UltraWide monitor for immersive viewing experience.",
     "price": 599.99,
     "category": "Monitor",
+    "brand":"HP",
     "ratings": 4.8,
     "createdAt": "2024-08-15T09:00:00Z"
   },
@@ -156,6 +171,7 @@
     "description": "An ergonomic keyboard designed for comfort and efficiency.",
     "price": 79.99,
     "category": "Keyboard",
+    "brand":"A4Tech",
     "ratings": 4.3,
     "createdAt": "2024-08-16T10:00:00Z"
   },
@@ -166,6 +182,7 @@
     "description": "Premium over-ear headphones with studio-quality sound.",
     "price": 249.99,
     "category": "Headphone",
+    "brand":"Boat",
     "ratings": 4.7,
     "createdAt": "2024-08-17T11:00:00Z"
   },
@@ -176,6 +193,7 @@
     "description": "True wireless earbuds with IPX7 waterproof rating.",
     "price": 139.99,
     "category": "Earpods",
+    "brand":"Boat",
     "ratings": 4.5,
     "createdAt": "2024-08-18T12:00:00Z"
   },
@@ -186,6 +204,7 @@
     "description": "A budget-friendly smartphone with a 5.5-inch display and 32GB storage.",
     "price": 299.99,
     "category": "Mobile",
+    "brand":"Samsung",
     "ratings": 4.3,
     "createdAt": "2024-08-19T13:00:00Z"
   },
@@ -196,6 +215,7 @@
     "description": "A luxury smartwatch with a stainless steel frame and leather strap.",
     "price": 349.99,
     "category": "Smartwatch",
+    "brand":"Realme",
     "ratings": 4.8,
     "createdAt": "2024-09-07T18:00:00Z"
   },
@@ -206,6 +226,7 @@
     "description": "A 15.6-inch portable monitor with Full HD resolution, perfect for on-the-go work.",
     "price": 229.99,
     "category": "Monitor",
+    "brand":"HP",
     "ratings": 4.6,
     "createdAt": "2024-08-20T14:00:00Z"
   },
@@ -216,6 +237,7 @@
     "description": "A wireless ergonomic keyboard with a split design and adjustable angles.",
     "price": 99.99,
     "category": "Keyboard",
+    "brand":"A4Tech",
     "ratings": 4.4,
     "createdAt": "2024-08-21T15:00:00Z"
   },
@@ -226,6 +248,7 @@
     "description": "A gaming headset with surround sound and a noise-cancelling microphone.",
     "price": 129.99,
     "category": "Headphone",
+    "brand":"Boat",
     "ratings": 4.8,
     "createdAt": "2024-08-22T16:00:00Z"
   },
@@ -236,6 +259,7 @@
     "description": "Over-ear headphones with advanced noise-cancelling technology.",
     "price": 299.99,
     "category": "Headphone",
+    "brand":"Boat",
     "ratings": 4.9,
     "createdAt": "2024-08-23T17:00:00Z"
   },
@@ -246,6 +270,7 @@
     "description": "True wireless earbuds with a compact charging case and 24-hour battery life.",
     "price": 159.99,
     "category": "Earpods",
+    "brand":"Boat",
     "ratings": 4.7,
     "createdAt": "2024-08-24T18:00:00Z"
   },
@@ -256,6 +281,7 @@
     "description": "A smartphone with a 6.4-inch AMOLED display and 128GB storage.",
     "price": 749.99,
     "category": "Mobile",
+    "brand":"Samsung",
     "ratings": 4.6,
     "createdAt": "2024-08-25T19:00:00Z"
   },
@@ -266,6 +292,7 @@
     "description": "A fitness-focused smartwatch with built-in GPS and activity tracking.",
     "price": 199.99,
     "category": "Smartwatch",
+    "brand":"Realme",
     "ratings": 4.5,
     "createdAt": "2024-08-26T20:00:00Z"
   },
@@ -276,6 +303,7 @@
     "description": "A 49-inch curved UltraWide monitor with 120Hz refresh rate and FreeSync.",
     "price": 1099.99,
     "category": "Monitor",
+    "brand":"Samsung",
     "ratings": 4.9,
     "createdAt": "2024-08-27T21:00:00Z"
   },
@@ -286,6 +314,7 @@
     "description": "A mechanical keyboard with RGB lighting and custom macro keys.",
     "price": 139.99,
     "category": "Keyboard",
+    "brand":"A4Tech",
     "ratings": 4.8,
     "createdAt": "2024-08-28T22:00:00Z"
   },
@@ -296,6 +325,7 @@
     "description": "Wireless over-ear headphones with high-fidelity sound and 30-hour battery life.",
     "price": 189.99,
     "category": "Headphone",
+    "brand":"Boat",
     "ratings": 4.7,
     "createdAt": "2024-08-29T09:00:00Z"
   },
@@ -306,6 +336,7 @@
     "description": "Water-resistant true wireless earbuds with crystal-clear sound.",
     "price": 139.99,
     "category": "Earpods",
+    "brand":"Boat",
     "ratings": 4.5,
     "createdAt": "2024-08-30T10:00:00Z"
   },
@@ -316,6 +347,7 @@
     "description": "A smartphone with a 7.0-inch OLED display and 512GB storage.",
     "price": 999.99,
     "category": "Mobile",
+    "brand":"Iphone",
     "ratings": 4.9,
     "createdAt": "2024-08-31T11:00:00Z"
   },
@@ -326,6 +358,7 @@
     "description": "A hybrid smartwatch with fitness tracking and smart notifications.",
     "price": 149.99,
     "category": "Smartwatch",
+    "brand":"Realme",
     "ratings": 4.4,
     "createdAt": "2024-09-01T12:00:00Z"
   },
@@ -336,6 +369,7 @@
     "description": "A 32-inch HDR gaming monitor with 165Hz refresh rate and G-Sync.",
     "price": 649.99,
     "category": "Monitor",
+    "brand":"Samsung",
     "ratings": 4.7,
     "createdAt": "2024-09-02T13:00:00Z"
   },
@@ -346,6 +380,7 @@
     "description": "A mechanical keyboard with silent keys and customizable backlighting.",
     "price": 129.99,
     "category": "Keyboard",
+    "brand":"A4Tech",
     "ratings": 4.5,
     "createdAt": "2024-09-03T14:00:00Z"
   },
@@ -356,6 +391,7 @@
     "description": "Gaming headphones with 7.1 surround sound and RGB lighting.",
     "price": 169.99,
     "category": "Headphone",
+    "brand":"Boat",
     "ratings": 4.8,
     "createdAt": "2024-09-04T15:00:00Z"
   },
@@ -366,6 +402,7 @@
     "description": "Sport-focused wireless earbuds with secure fit and sweat resistance.",
     "price": 149.99,
     "category": "Earpods",
+    "brand":"Boat",
     "ratings": 4.6,
     "createdAt": "2024-09-05T16:00:00Z"
   },
@@ -376,6 +413,7 @@
     "description": "A smartphone with a 6.7-inch edge-to-edge display and 64MP camera.",
     "price": 899.99,
     "category": "Mobile",
+    "brand":"Iphone",
     "ratings": 4.8,
     "createdAt": "2024-09-06T17:00:00Z"
   },
@@ -386,6 +424,7 @@
     "description": "A rugged smartwatch designed for outdoor activities, with GPS and altimeter.",
     "price": 299.99,
     "category": "Smartwatch",
+    "brand":"Realme",
     "ratings": 4.7,
     "createdAt": "2024-09-07T18:00:00Z"
   },
@@ -396,6 +435,7 @@
     "description": "A 24-inch gaming monitor with a 240Hz refresh rate",
     "price": 649.99,
     "category": "Monitor",
+    "brand":"HP",
     "ratings": 4.7,
     "createdAt": "2024-09-02T13:00:00Z"
   }

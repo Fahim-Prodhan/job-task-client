@@ -80,14 +80,14 @@ const Navbar = () => {
       <nav className="bg-base-200 shadow-lg">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto ">
           {/* Left side website name and logo */}
-          <Link
+          <a
             href="/"
             className="flex items-center space-x-3 rtl:space-x-reverse"
           >
             <img src={logo} className="w-44" alt="" />
             <span className="self-center text-2xl font-semibold whitespace-nowrap ">
             </span>
-          </Link>
+          </a>
 
           {/* Right side Buttons */}
           <div className="flex items-center lg:order-2 space-x-3 lg:space-x-0 rtl:space-x-reverse">
