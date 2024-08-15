@@ -49,7 +49,13 @@ const Products = () => {
             })
     }, [currentPage, itemsPerPage, search])
 
-
+    useEffect(() => {
+        axios.get(`${baseUrl}/api/productCounts?search=${search}`)
+            .then(res => {
+                SetCount(res.data.count)
+                setLoadingData(false)
+            })
+    }, [search])
 
     const handleGrid = () => {
         setGridActive(true)
@@ -154,7 +160,17 @@ const Products = () => {
                     </table>
                 </div>
             </div>
-          
+            {/* pagination */}
+            <div className='flex justify-center mt-12 gap-4'>
+                <button onClick={handlePrev} className="btn">Prev</button>
+                {
+                    pages.map(page => <button
+                        onClick={() => setCurrentPage(page)}
+                        className={`btn  ${page == currentPage ? 'bg-[#F6B17A] text-white' : ''}`}
+                        key={page}> {page}</button>)
+                }
+                <button onClick={handleNext} className="btn">Next</button>
+            </div>
         </div>
     );
 };
