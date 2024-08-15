@@ -74,10 +74,10 @@ const AuthProvider = ({ children }) => {
             setLoading(false)
             //if current user exit
             if (currentUser) {
-                axios.post(`${baseUrl}/jwt`, loggedUser, { withCredentials: true })
-                    .then(res => {
-                        console.log(res.data);
-                    })
+                // axios.post(`${baseUrl}/jwt`, loggedUser, { withCredentials: true })
+                //     .then(res => {
+                //         console.log(res.data);
+                //     })
             } else {
                 axios.post(`${baseUrl}/logout`, loggedUser, { withCredentials: true })
                 .then(res => {

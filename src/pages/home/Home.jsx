@@ -1,6 +1,12 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import auth from '../../firebase/firebase.config';
+import { AuthContext } from '../../provider/AuthProvider';
 
 const Home = () => {
+
+    const {user} = useContext(AuthContext)
+    console.log(user);
+
     return (
 
         <div id='home-container' className='scroll-smooth'>

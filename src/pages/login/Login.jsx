@@ -10,7 +10,7 @@ import { FcGoogle } from "react-icons/fc";
 import { FaGithub } from "react-icons/fa";
 import { AuthContext } from "../../provider/AuthProvider";
 import auth from "../../firebase/firebase.config";
-// import logo from '../../assets/images/logo blue.png'
+import logo from '../../assets/LOGO 1.png'
 import { TiTick } from "react-icons/ti";
 import { motion } from "framer-motion";
 
@@ -118,22 +118,22 @@ const Login = () => {
     return (
         <div className='max-w-sm px-6 md:max-w-3xl md:px-8 lg:max-w-7xl mx-auto lg:mt-12'>
             <Helmet>
-                <title>volunnet | Login</title>
+                <title>Products | Login</title>
             </Helmet>
             <div className="relative md:top-10 md:min-h-[580px]">
                 <div className="grid md:grid-cols-2 gap-7">
-                    <motion.div initial={{opacity:.7, scale:0.7, x:-200}} whileInView={{opacity:1, scale:1, x:0}} transition={{duration: 0.6}} viewport={{once:true}} className="lg:py-0 py-4 ">
+                    <motion.div initial={{ opacity: .7, scale: 0.7, x: -200 }} whileInView={{ opacity: 1, scale: 1, x: 0 }} transition={{ duration: 0.6 }} viewport={{ once: true }} className="lg:py-0 py-4 ">
                         <div className='flex justify-center lg:justify-start my-6'>
-                            <img className='lg:w-[40%] w-1/2' src={''} alt="" />
+                            <img className='lg:w-[60%] w-1/2' src={logo} alt="" />
                         </div>
                         <div >
-                            <h1 className='font-bold text-xl md:text-3xl lg:text-4xl text-center lg:text-left'>Login your Volunnet account</h1>
-                            <p className='flex items-center gap-1 my-4 lg:text-xl'><span className='text-2xl text-[#68D2E8]'><TiTick /></span>Create a post to find volunteer in minutes</p>
-                            <p className='flex items-center gap-1 my-4 lg:text-xl'><span className='text-2xl text-[#68D2E8]'><TiTick /></span>Work as volunteer with any org</p>
+                            <h1 className='font-bold text-xl md:text-3xl lg:text-4xl text-center lg:text-left'>Login your account</h1>
+                            <p className='flex items-center gap-1 my-4 lg:text-xl'><span className='text-2xl text-[#68D2E8]'><TiTick /></span>Search any product in minutes</p>
+                            <p className='flex items-center gap-1 my-4 lg:text-xl'><span className='text-2xl text-[#68D2E8]'><TiTick /></span>Easy way to buy product</p>
                             <p className='flex items-center gap-1 my-4 lg:text-xl'><span className='text-2xl text-[#68D2E8]'><TiTick /></span>Join us in shaping a brighter tomorrow!</p>
                         </div>
                     </motion.div>
-                    <motion.div initial={{opacity:.7, scale:0.7, x:200}} whileInView={{opacity:1, scale:1, x:0}} transition={{duration: 0.6}} viewport={{once:true}} className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+                    <motion.div initial={{ opacity: .7, scale: 0.7, x: 200 }} whileInView={{ opacity: 1, scale: 1, x: 0 }} transition={{ duration: 0.6 }} viewport={{ once: true }} className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
                         <form onSubmit={handleSingInUser} className="card-body">
                             <div className="form-control">
                                 <label className="label">
