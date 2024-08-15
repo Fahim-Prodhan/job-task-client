@@ -77,7 +77,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <nav className="bg-base-200 shadow-lg">
+      <nav className="bg-base-200 shadow-lg py-4">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto ">
           {/* Left side website name and logo */}
           <a
@@ -148,7 +148,7 @@ const Navbar = () => {
               onClick={handleHamburger}
               data-collapse-toggle="navbar-cta"
               type="button"
-              className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm rounded-lg lg:hidden text-white "
+              className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm rounded-lg lg:hidden  "
               aria-controls="navbar-cta"
               aria-expanded="false"
             >
@@ -182,7 +182,7 @@ const Navbar = () => {
         </div>
 
         {/* For Small device */}
-        <div className={`lg:hidden fixed p-6 z-[99] duration-500 md:w-[50%] w-[70%] h-screen top-0 text-white bg-[#2D3250] ${hamburger ? "right-0" : "right-[-350px]  md:right-[-700px]"}`}>
+        <div className={`lg:hidden fixed p-6 z-[99] duration-500 md:w-[50%] w-[70%] h-screen top-0 bg-[#eee] ${hamburger ? "right-0" : "right-[-350px]  md:right-[-700px]"}`}>
           <button onClick={handleHamburger} className="text-2xl">
             <IoMdClose />
           </button>

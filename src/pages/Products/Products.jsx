@@ -66,7 +66,7 @@ const Products = () => {
                 size: itemsPerPage,
                 search,
                 category: filterCategory,
-                brand:filterBrand,
+                brand: filterBrand,
                 sortBy,
                 minPrice,
                 maxPrice
@@ -76,7 +76,7 @@ const Products = () => {
             SetCount(res.data.totalProducts);
             setLoadingData(false);
         });
-    }, [currentPage, itemsPerPage, search, filterCategory, sortBy, minPrice, maxPrice,filterBrand]);
+    }, [currentPage, itemsPerPage, search, filterCategory, sortBy, minPrice, maxPrice, filterBrand]);
 
     if (loadingData) {
         return (
@@ -96,57 +96,59 @@ const Products = () => {
             </Helmet>
 
             <div className='flex my-4 gap-4 flex-wrap justify-between'>
-                <form className='flex gap-1' onSubmit={handleSearch}>
-                    <label className="input input-bordered flex items-center gap-2">
-                        <input name='search' type="text" className="grow" placeholder="Search" />
+                <form className='flex gap-1 self-start' onSubmit={handleSearch}>
+                    <label className="input input-bordered flex items-center gap-2 w-full max-w-52">
+                        <input name='search' type="text" className="grow " placeholder="Search" />
                     </label>
                     <button type='submit' className="btn bg-[#F6B17A] text-white">Search</button>
                 </form>
 
-                <select className="select select-bordered w-full max-w-44" onChange={handleCategoryChange}>
-                    <option value="" selected>All Categories</option>
-                    <option value="Mobile">Mobile</option>
-                    <option value="Smartwatch">Smartwatch</option>
-                    <option value="Keyboard">Keyboard</option>
-                    <option value="Headphone">Headphone</option>
-                    <option value="Earpods">Earpods</option>
-                </select>
-                <select className="select select-bordered w-full max-w-44" onChange={handleBrandChange}>
-                    <option value="" selected>All Brands</option>
-                    <option value="Iphone">Iphone</option>
-                    <option value="Samsung">Samsung</option>
-                    <option value="Hp">HP</option>
-                    <option value="Realme">Realme</option>
-                    <option value="Boat">Boat</option>
-                    <option value="A4Tech">A4Tech</option>
-                </select>
+                <div className='flex gap-6 flex-wrap lg:flex-nowrap'>
+                    <select className="select select-bordered w-full max-w-36" onChange={handleCategoryChange}>
+                        <option value="" selected>All Categories</option>
+                        <option value="Mobile">Mobile</option>
+                        <option value="Smartwatch">Smartwatch</option>
+                        <option value="Keyboard">Keyboard</option>
+                        <option value="Headphone">Headphone</option>
+                        <option value="Earpods">Earpods</option>
+                    </select>
+                    <select className="select select-bordered w-full max-w-36" onChange={handleBrandChange}>
+                        <option value="" selected>All Brands</option>
+                        <option value="Iphone">Iphone</option>
+                        <option value="Samsung">Samsung</option>
+                        <option value="Hp">HP</option>
+                        <option value="Realme">Realme</option>
+                        <option value="Boat">Boat</option>
+                        <option value="A4Tech">A4Tech</option>
+                    </select>
 
-                <select className="select select-bordered w-full max-w-44" onChange={handlePriceRangeChange}>
-                    <option value="0-100000">All Prices</option>
-                    <option value="50-100">50-100</option>
-                    <option value="101-200">101-200</option>
-                    <option value="201-300">201-300</option>
-                    <option value="301-500">301-500</option>
-                    <option value="501-100000">501+</option>
-                </select>
-                <select className="select select-bordered w-full max-w-44" onChange={handleSortChange}>
-                    <option value="" selected>Sort By</option>
-                    <option value="High to low">High to Low</option>
-                    <option value="Low to high">Low to High</option>
-                </select>
+                    <select className="select select-bordered w-full max-w-36" onChange={handlePriceRangeChange}>
+                        <option value="0-100000">All Prices</option>
+                        <option value="50-100">50-100</option>
+                        <option value="101-200">101-200</option>
+                        <option value="201-300">201-300</option>
+                        <option value="301-500">301-500</option>
+                        <option value="501-100000">501+</option>
+                    </select>
+                    <select className="select select-bordered w-full max-w-36" onChange={handleSortChange}>
+                        <option value="" selected>Sort By</option>
+                        <option value="High to low">High to Low</option>
+                        <option value="Low to high">Low to High</option>
+                    </select>
+                </div>
             </div>
 
             <div className={`grid lg:grid-cols-5 md:grid-cols-3 grid-cols-2 gap-6`}>
                 {Products.map(p => (
-                    <div key={p._id} className="animate__animated animate__zoomIn shadow-lg h-[400px] md:h-[560px] relative">
+                    <div key={p._id} className="animate__animated animate__zoomIn shadow-lg h-[420px] md:h-[560px] relative">
                         <div className=''>
-                            <p className='bg-orange-400 absolute top-2 right-2 px-1 rounded-lg text-white'>Rating: {p.ratings}</p>
+                            <p className='bg-orange-400 absolute top-2 right-2 px-1 rounded-lg text-white text-[10px]'>Rating: {p.ratings}</p>
                             <img src={p.productImage} className="" />
                             <div>
-                                <h2 className="md:text-[14px] text-[12px] font-bold text-center px-2 pt-1">
-                                    {p.productName.length > 25 ? `${p.productName.slice(0, 25)}...` : p.productName}
+                                <h2 className="md:text-[16px] text-[12px] font-bold text-center px-2 pt-1">
+                                    {p.productName.length > 22 ? `${p.productName.slice(0, 22)}...` : p.productName}
                                 </h2>
-                                <p className='text-center font-mono font-semibold py-1 text-xl'>
+                                <p className='text-center font-semibold py-1 lg:text-xl'>
                                     Brand: {p.brand}
                                 </p>
                                 <p className='text-center font-mono font-semibold py-1 absolute bottom-14 md:left-16 left-7'>
