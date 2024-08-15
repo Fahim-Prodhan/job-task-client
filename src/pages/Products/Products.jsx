@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet';
 import axios from 'axios';
 import baseUrl from '../../services/helper';
+import ProductModal from './ProductModal'; // Import the Modal component
 
 const Products = () => {
     const [Products, setProducts] = useState([]);
@@ -15,6 +16,7 @@ const Products = () => {
     const [minPrice, setMinPrice] = useState(0);
     const [maxPrice, setMaxPrice] = useState(100000);
     const [loadingData, setLoadingData] = useState(true);
+    const [selectedProduct, setSelectedProduct] = useState(null);
 
     const numberOfPages = Math.ceil(count / itemsPerPage);
     const pages = [...Array(numberOfPages).keys()].map(e => e + 1);
@@ -77,6 +79,14 @@ const Products = () => {
             setLoadingData(false);
         });
     }, [currentPage, itemsPerPage, search, filterCategory, sortBy, minPrice, maxPrice, filterBrand]);
+
+    const openModal = (product) => {
+        setSelectedProduct(product);
+    };
+
+    const closeModal = () => {
+        setSelectedProduct(null);
+    };
 
     if (loadingData) {
         return (
@@ -157,7 +167,7 @@ const Products = () => {
                             </div>
                         </div>
                         <div className='text-center absolute bottom-4 left-7 md:left-[65px]'>
-                            <button className='btn btn-sm shadow-lg'>BUY NOW</button>
+                            <button onClick={() => openModal(p)} className='btn btn-sm shadow-lg'>BUY NOW</button>
                         </div>
                     </div>
                 ))}
@@ -175,6 +185,8 @@ const Products = () => {
                 ))}
                 <button onClick={handleNext} className="btn">Next</button>
             </div>
+
+            <ProductModal product={selectedProduct} onClose={closeModal} />
         </div>
     );
 };

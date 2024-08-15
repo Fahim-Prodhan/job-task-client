@@ -20,7 +20,7 @@ const Footer = () => {
         <nav>
           <h6 className="footer-title">Contact Us</h6>
           <a className="link link-hover flex gap-2"><span><FaPhone /></span> 1-800-700-6200</a>
-          <a className="link link-hover flex gap-2"><span><IoMail /></span>info@volunnet.org</a>
+          <a className="link link-hover flex gap-2"><span><IoMail /></span>info@estarch.org</a>
           <a className="link link-hover flex gap-2"><span><FaLocationDot /></span>3015 Grand Ave, Coconut
             Grove, <br />Merrick Way, FL 12345 </a>
         </nav>
@@ -43,7 +43,7 @@ const Footer = () => {
         </form>
       </footer>
       <footer className="p-4 bg-neutral text-neutral-content">
-        <p className="text-center">Copyright Volunnet © 2024 - All right reserved</p>
+        <p className="text-center">Copyright Estarch © 2024 - All right reserved</p>
       </footer>
     </div>
   );

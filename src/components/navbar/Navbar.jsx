@@ -77,7 +77,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <nav className="bg-base-200 shadow-lg py-4">
+      <nav className="bg-base-200 shadow-lg py-4 lg:py-1">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto ">
           {/* Left side website name and logo */}
           <a
