@@ -1,0 +1,402 @@
+[
+  {
+    "id": 1,
+    "productName": "Smartphone X1",
+    "productImage": "https://i.ibb.co/9H17tgn/sg9z-Fu-RATu-W2-Yu5-SGcab-Rg.jpg",
+    "description": "A high-performance smartphone with a 6.5-inch display and 128GB storage.",
+    "price": 699.99,
+    "category": "Mobile",
+    "ratings": 4.7,
+    "createdAt": "2024-08-01T10:00:00Z"
+  },
+  {
+    "id": 2,
+    "productName": "Smartwatch Pro",
+    "productImage": "https://i.ibb.co/xjtzjXs/n5-V7dd-Zm-Rq-G-BEe-ITWz-Ttg.jpg",
+    "description": "A feature-rich smartwatch with heart rate monitoring and GPS.",
+    "price": 249.99,
+    "category": "Smartwatch",
+    "ratings": 4.8,
+    "createdAt": "2024-08-02T11:00:00Z"
+  },
+  {
+    "id": 3,
+    "productName": "Ultra HD Monitor",
+    "productImage": "https://i.ibb.co/xhpxs65/8-UMi-Fb-SQJKMUf-MGjnmzng.jpg",
+    "description": "A 27-inch Ultra HD monitor with stunning picture quality.",
+    "price": 399.99,
+    "category": "Monitor",
+    "ratings": 4.6,
+    "createdAt": "2024-08-03T12:00:00Z"
+  },
+  {
+    "id": 4,
+    "productName": "Mechanical Keyboard",
+    "productImage": "https://i.ibb.co/y6PGXYx/Yh9vx-DPGQZ612e-YQmb8l-YA.jpg",
+    "description": "A durable mechanical keyboard with customizable RGB lighting.",
+    "price": 89.99,
+    "category": "Keyboard",
+    "ratings": 4.5,
+    "createdAt": "2024-08-04T13:00:00Z"
+  },
+  {
+    "id": 5,
+    "productName": "Wireless Headphones",
+    "productImage": "https://i.ibb.co/1LRKDPB/z-A4-A-y9o-S0-W-Kw-GS41-HFBw.jpg",
+    "description": "Noise-cancelling wireless headphones with 20-hour battery life.",
+    "price": 199.99,
+    "category": "Headphone",
+    "ratings": 4.7,
+    "createdAt": "2024-08-05T14:00:00Z"
+  },
+  {
+    "id": 6,
+    "productName": "True Wireless Earbuds",
+    "productImage": "https://i.ibb.co/MPvp2fP/4-EK-O-3-HTOW6-Leh-L4fsco-Q.jpg",
+    "description": "Compact true wireless earbuds with superior sound quality.",
+    "price": 129.99,
+    "category": "Earpods",
+    "ratings": 4.6,
+    "createdAt": "2024-08-06T15:00:00Z"
+  },
+  {
+    "id": 7,
+    "productName": "Smartphone Y2",
+    "productImage": "https://i.ibb.co/wMRY9gm/HJaoi-M-ZRn2-C0-Ze-M4-Iehx-A.jpg",
+    "description": "A smartphone with a 6.1-inch display, 64GB storage, and dual cameras.",
+    "price": 599.99,
+    "category": "Mobile",
+    "ratings": 4.5,
+    "createdAt": "2024-08-07T16:00:00Z"
+  },
+  {
+    "id": 8,
+    "productName": "Advanced Fitness Smartwatch",
+    "productImage": "https://i.ibb.co/YbGfLYw/m-I-cwi-LLRs-SVZvdkfz-J2f-A.jpg",
+    "description": "A smartwatch designed for fitness enthusiasts with multiple health tracking features.",
+    "price": 199.99,
+    "category": "Smartwatch",
+    "ratings": 4.7,
+    "createdAt": "2024-08-08T17:00:00Z"
+  },
+  {
+    "id": 9,
+    "productName": "Curved Gaming Monitor",
+    "productImage": "https://i.ibb.co/WBP6Zs7/y5w-O9-Vu-S9-WAp-GCJe-Vp-U-Q.jpg",
+    "description": "A 34-inch curved gaming monitor with a 144Hz refresh rate.",
+    "price": 499.99,
+    "category": "Monitor",
+    "ratings": 4.8,
+    "createdAt": "2024-08-09T18:00:00Z"
+  },
+  {
+    "id": 10,
+    "productName": "Wireless Mechanical Keyboard",
+    "productImage": "https://i.ibb.co/nLH9GX6/Md-Gf-T-Cr-Ru-Kg-Q6m-T0-FZ-6w.jpg",
+    "description": "A wireless mechanical keyboard with a sleek design and tactile keys.",
+    "price": 109.99,
+    "category": "Keyboard",
+    "ratings": 4.6,
+    "createdAt": "2024-08-10T19:00:00Z"
+  },
+  {
+    "id": 11,
+    "productName": "Over-Ear Headphones",
+    "productImage": "https://i.ibb.co/jTdDsFK/c-OGq-Jj5-RTdyxg-XE8d-O4-Ekg.jpg",
+    "description": "Comfortable over-ear headphones with immersive sound quality.",
+    "price": 149.99,
+    "category": "Headphone",
+    "ratings": 4.5,
+    "createdAt": "2024-08-11T20:00:00Z"
+  },
+  {
+    "id": 12,
+    "productName": "Noise-Cancelling Earbuds",
+    "productImage": "https://i.ibb.co/VtgTpzs/mk-Jz394-XQZGYb-DS6r-7daw.jpg",
+    "description": "True wireless earbuds with active noise cancellation.",
+    "price": 159.99,
+    "category": "Earpods",
+    "ratings": 4.7,
+    "createdAt": "2024-08-12T21:00:00Z"
+  },
+  {
+    "id": 13,
+    "productName": "Smartphone Z3",
+    "productImage": "https://i.ibb.co/C0bfnmN/E-q-Pi-Zyb-Rg2ojk7p-LHIgb-Q.jpg",
+    "description": "A powerful smartphone with a 6.8-inch display and 256GB storage.",
+    "price": 899.99,
+    "category": "Mobile",
+    "ratings": 4.9,
+    "createdAt": "2024-08-13T22:00:00Z"
+  },
+  {
+    "id": 14,
+    "productName": "Hybrid Smartwatch",
+    "productImage": "https://i.ibb.co/Czm3bVn/i-Dwab0e8-R1amg4-EGTS-W4-A.jpg",
+    "description": "A hybrid smartwatch with analog design and smart features.",
+    "price": 179.99,
+    "category": "Smartwatch",
+    "ratings": 4.4,
+    "createdAt": "2024-08-14T23:00:00Z"
+  },
+  {
+    "id": 15,
+    "productName": "4K UltraWide Monitor",
+    "productImage": "https://i.ibb.co/WtnbkmY/db-Yx2m6-TOK8y-JG2syd1-UQ.jpg",
+    "description": "A 34-inch 4K UltraWide monitor for immersive viewing experience.",
+    "price": 599.99,
+    "category": "Monitor",
+    "ratings": 4.8,
+    "createdAt": "2024-08-15T09:00:00Z"
+  },
+  {
+    "id": 16,
+    "productName": "Ergonomic Keyboard",
+    "productImage": "https://i.ibb.co/NpNLGfr/Bx-8-Iyxz-S0ytb-K3b3-Na-NKQ.jpg",
+    "description": "An ergonomic keyboard designed for comfort and efficiency.",
+    "price": 79.99,
+    "category": "Keyboard",
+    "ratings": 4.3,
+    "createdAt": "2024-08-16T10:00:00Z"
+  },
+  {
+    "id": 17,
+    "productName": "Premium Headphones",
+    "productImage": "https://i.ibb.co/RcBqsqV/Fwgxd7l4-R4u-ABy-ULXKg-Q-A.jpg",
+    "description": "Premium over-ear headphones with studio-quality sound.",
+    "price": 249.99,
+    "category": "Headphone",
+    "ratings": 4.7,
+    "createdAt": "2024-08-17T11:00:00Z"
+  },
+  {
+    "id": 18,
+    "productName": "Waterproof Earbuds",
+    "productImage": "https://i.ibb.co/28tSjtS/hz0y-YLl9-QSCr-F-xu-q-AFwg.jpg",
+    "description": "True wireless earbuds with IPX7 waterproof rating.",
+    "price": 139.99,
+    "category": "Earpods",
+    "ratings": 4.5,
+    "createdAt": "2024-08-18T12:00:00Z"
+  },
+  {
+    "id": 19,
+    "productName": "Smartphone A4",
+    "productImage": "https://i.ibb.co/GchtmZr/D-PXl-VPFQ5-Kc-XZre-E8-Vwxw.jpg",
+    "description": "A budget-friendly smartphone with a 5.5-inch display and 32GB storage.",
+    "price": 299.99,
+    "category": "Mobile",
+    "ratings": 4.3,
+    "createdAt": "2024-08-19T13:00:00Z"
+  },
+  {
+    "id": 20,
+    "productName": "Luxury Smartwatch",
+    "productImage": "https://i.ibb.co/5262qwp/Fq-Qy-LU9d-R-6t5-DV6o3gvog.jpg",
+    "description": "A luxury smartwatch with a stainless steel frame and leather strap.",
+    "price": 349.99,
+    "category": "Smartwatch",
+    "ratings": 4.8,
+    "createdAt": "2024-09-07T18:00:00Z"
+  },
+  {
+    "id": 21,
+    "productName": "Portable Monitor",
+    "productImage": "https://i.ibb.co/Fqfszy2/t6-Hkj-QCJSRKW9-NM5-Yg-DHgw.jpg",
+    "description": "A 15.6-inch portable monitor with Full HD resolution, perfect for on-the-go work.",
+    "price": 229.99,
+    "category": "Monitor",
+    "ratings": 4.6,
+    "createdAt": "2024-08-20T14:00:00Z"
+  },
+  {
+    "id": 22,
+    "productName": "Wireless Ergonomic Keyboard",
+    "productImage": "https://i.ibb.co/mCSnBsq/kh-UJU0-EWQXGBXp1e-Zjk-LQ.jpg",
+    "description": "A wireless ergonomic keyboard with a split design and adjustable angles.",
+    "price": 99.99,
+    "category": "Keyboard",
+    "ratings": 4.4,
+    "createdAt": "2024-08-21T15:00:00Z"
+  },
+  {
+    "id": 23,
+    "productName": "Gaming Headset",
+    "productImage": "https://i.ibb.co/JFtqzsc/yzn-QNt9-JTBWr-Dx-M-zy-LLp-A.jpg",
+    "description": "A gaming headset with surround sound and a noise-cancelling microphone.",
+    "price": 129.99,
+    "category": "Headphone",
+    "ratings": 4.8,
+    "createdAt": "2024-08-22T16:00:00Z"
+  },
+  {
+    "id": 24,
+    "productName": "Active Noise-Cancelling Headphones",
+    "productImage": "https://i.ibb.co/HGZpHHQ/k-LOVda9l-SMSOd-E-f-HKG2j-A.jpg",
+    "description": "Over-ear headphones with advanced noise-cancelling technology.",
+    "price": 299.99,
+    "category": "Headphone",
+    "ratings": 4.9,
+    "createdAt": "2024-08-23T17:00:00Z"
+  },
+  {
+    "id": 25,
+    "productName": "Wireless Earbuds with Charging Case",
+    "productImage": "https://i.ibb.co/XDV3dVt/Gx-Ft-GGLNRMq-X5-LNmn-Gdj7w.jpg",
+    "description": "True wireless earbuds with a compact charging case and 24-hour battery life.",
+    "price": 159.99,
+    "category": "Earpods",
+    "ratings": 4.7,
+    "createdAt": "2024-08-24T18:00:00Z"
+  },
+  {
+    "id": 26,
+    "productName": "Smartphone B5",
+    "productImage": "https://i.ibb.co/FzS1nVY/F1-NKWv-OHRb-KXe4phg-BQg-BQ.jpg",
+    "description": "A smartphone with a 6.4-inch AMOLED display and 128GB storage.",
+    "price": 749.99,
+    "category": "Mobile",
+    "ratings": 4.6,
+    "createdAt": "2024-08-25T19:00:00Z"
+  },
+  {
+    "id": 27,
+    "productName": "Fitness Smartwatch with GPS",
+    "productImage": "https://i.ibb.co/MRtYnXX/b-KWKpo-Ei-TTKd-VA-mglj-E3-Q.jpg",
+    "description": "A fitness-focused smartwatch with built-in GPS and activity tracking.",
+    "price": 199.99,
+    "category": "Smartwatch",
+    "ratings": 4.5,
+    "createdAt": "2024-08-26T20:00:00Z"
+  },
+  {
+    "id": 28,
+    "productName": "Curved UltraWide Gaming Monitor",
+    "productImage": "https://i.ibb.co/5RWPfNF/ZYSyg-CTt-Rb-W4-Yl-E63-Kdl-Q.jpg",
+    "description": "A 49-inch curved UltraWide monitor with 120Hz refresh rate and FreeSync.",
+    "price": 1099.99,
+    "category": "Monitor",
+    "ratings": 4.9,
+    "createdAt": "2024-08-27T21:00:00Z"
+  },
+  {
+    "id": 29,
+    "productName": "Mechanical Gaming Keyboard",
+    "productImage": "https://i.ibb.co/h90hhPW/Qv-Eblv-YQEGl6v-Qnp-Rys-Vw.jpg",
+    "description": "A mechanical keyboard with RGB lighting and custom macro keys.",
+    "price": 139.99,
+    "category": "Keyboard",
+    "ratings": 4.8,
+    "createdAt": "2024-08-28T22:00:00Z"
+  },
+  {
+    "id": 30,
+    "productName": "Over-Ear Bluetooth Headphones",
+    "productImage": "https://i.ibb.co/Kb0NSyF/i-UQSb-Nso-Q1q-Mlzm-LAQ-a1-Q.jpg",
+    "description": "Wireless over-ear headphones with high-fidelity sound and 30-hour battery life.",
+    "price": 189.99,
+    "category": "Headphone",
+    "ratings": 4.7,
+    "createdAt": "2024-08-29T09:00:00Z"
+  },
+  {
+    "id": 31,
+    "productName": "Water-Resistant Earbuds",
+    "productImage": "https://i.ibb.co/hCpXswR/Pxt-Hf-V5-TPSe-Gl-H0l-N3pg.jpg",
+    "description": "Water-resistant true wireless earbuds with crystal-clear sound.",
+    "price": 139.99,
+    "category": "Earpods",
+    "ratings": 4.5,
+    "createdAt": "2024-08-30T10:00:00Z"
+  },
+  {
+    "id": 32,
+    "productName": "Smartphone C6",
+    "productImage": "https://i.ibb.co/1bZbG08/Sp7-G5xd-ETOSfb7-AX7v-X7-AQ.jpg",
+    "description": "A smartphone with a 7.0-inch OLED display and 512GB storage.",
+    "price": 999.99,
+    "category": "Mobile",
+    "ratings": 4.9,
+    "createdAt": "2024-08-31T11:00:00Z"
+  },
+  {
+    "id": 33,
+    "productName": "Hybrid Fitness Smartwatch",
+    "productImage": "https://i.ibb.co/WDbbtdx/PXHdq-b-KRo-SVQz-Fvclj7ew.jpg",
+    "description": "A hybrid smartwatch with fitness tracking and smart notifications.",
+    "price": 149.99,
+    "category": "Smartwatch",
+    "ratings": 4.4,
+    "createdAt": "2024-09-01T12:00:00Z"
+  },
+  {
+    "id": 34,
+    "productName": "HDR Gaming Monitor",
+    "productImage": "https://i.ibb.co/0qHKJ9H/x-KCeq7-Qs-QTe-Oo-XJEp5-Nx-Fg.jpg",
+    "description": "A 32-inch HDR gaming monitor with 165Hz refresh rate and G-Sync.",
+    "price": 649.99,
+    "category": "Monitor",
+    "ratings": 4.7,
+    "createdAt": "2024-09-02T13:00:00Z"
+  },
+  {
+    "id": 35,
+    "productName": "Silent Mechanical Keyboard",
+    "productImage": "https://i.ibb.co/syL9pyx/Fx-WXb-Lnl-T36e-FJrh-Z84sjg.jpg",
+    "description": "A mechanical keyboard with silent keys and customizable backlighting.",
+    "price": 129.99,
+    "category": "Keyboard",
+    "ratings": 4.5,
+    "createdAt": "2024-09-03T14:00:00Z"
+  },
+  {
+    "id": 36,
+    "productName": "Gaming Headphones with Surround Sound",
+    "productImage": "https://i.ibb.co/xDYFBM5/toz-EA57-Qke9h-XXMm-Bd-Dzg.jpg",
+    "description": "Gaming headphones with 7.1 surround sound and RGB lighting.",
+    "price": 169.99,
+    "category": "Headphone",
+    "ratings": 4.8,
+    "createdAt": "2024-09-04T15:00:00Z"
+  },
+  {
+    "id": 37,
+    "productName": "True Wireless Sport Earbuds",
+    "productImage": "https://i.ibb.co/TWdSYBQ/02ik-VC9c-S-a6mijf-Mri-ERQ.jpg",
+    "description": "Sport-focused wireless earbuds with secure fit and sweat resistance.",
+    "price": 149.99,
+    "category": "Earpods",
+    "ratings": 4.6,
+    "createdAt": "2024-09-05T16:00:00Z"
+  },
+  {
+    "id": 38,
+    "productName": "Smartphone D7",
+    "productImage": "https://i.ibb.co/tH0zmFN/b-XVmdu8-KSY6ma-EMwkyl2-w.jpg",
+    "description": "A smartphone with a 6.7-inch edge-to-edge display and 64MP camera.",
+    "price": 899.99,
+    "category": "Mobile",
+    "ratings": 4.8,
+    "createdAt": "2024-09-06T17:00:00Z"
+  },
+  {
+    "id": 39,
+    "productName": "Rugged Outdoor Smartwatch",
+    "productImage": "https://i.ibb.co/FnmRgGc/Ky-IMj-H0m-Sdm-XF5sgi1-Tja-Q.jpg",
+    "description": "A rugged smartwatch designed for outdoor activities, with GPS and altimeter.",
+    "price": 299.99,
+    "category": "Smartwatch",
+    "ratings": 4.7,
+    "createdAt": "2024-09-07T18:00:00Z"
+  },
+  {
+    "id": 40,
+    "productName": "High-Refresh Gaming Monitor",
+    "productImage": "https://i.ibb.co/yprc0yk/J8j6wyg-HSH-FRDObn-Bf-B-g.jpg",
+    "description": "A 24-inch gaming monitor with a 240Hz refresh rate",
+    "price": 649.99,
+    "category": "Monitor",
+    "ratings": 4.7,
+    "createdAt": "2024-09-02T13:00:00Z"
+  }
+]
