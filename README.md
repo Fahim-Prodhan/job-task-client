@@ -8,7 +8,10 @@
 2. **Install Dependencies**:
    ```bash
     npm install
-
+   
+3. **Run**:
+   ```bash
+    npm run dev
 ## Environment Variables
 Create a `.env.local` file in the root directory of your project and add the following environment variables:
 
@@ -22,6 +25,4 @@ VITE_STORAGEBUCKET=your_firebase_storage_bucket
 VITE_MESSAGINGSENDERID=your_firebase_messaging_sender_id
 VITE_APPID=your_firebase_app_id
 
-4. **Run**:
-   ```bash
-    npm run dev
+
