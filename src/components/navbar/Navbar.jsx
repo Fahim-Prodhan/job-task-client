@@ -21,6 +21,10 @@ const Navbar = () => {
     document.querySelector('html').setAttribute('data-theme', localTheme)
   }, [theme])
 
+  const handleReload = ()=>{
+    window.location.reload();
+  }
+
   const handleThemeToggle = (e) => {
     if (e.target.checked) {
       setTheme('dark')
@@ -56,7 +60,7 @@ const Navbar = () => {
 
   const links = (
     <>
-      <li><NavLink
+      <li onClick={handleReload}><NavLink
         onClick={hamburger}
         to="/"
         style={({ isActive }) => ({
@@ -67,8 +71,6 @@ const Navbar = () => {
           background: isActive ? "#1111111f" : "transparent",
         })}>Home</NavLink>
       </li>
-   
-
 
     </>
   );

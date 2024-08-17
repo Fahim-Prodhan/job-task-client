@@ -1,12 +1,9 @@
-import React, { useContext } from 'react';
-import auth from '../../firebase/firebase.config';
-import { AuthContext } from '../../provider/AuthProvider';
+import React from 'react';
 import Products from '../Products/Products';
 
 const Home = () => {
 
-    const {user} = useContext(AuthContext)
-    console.log(user);
+
 
     return (
 

@@ -158,7 +158,7 @@ const Login = () => {
                                 <div className="divider"> sign in with</div>
                                 <div className="flex justify-center gap-6">
                                     <button type="button" onClick={handleGoogleSignIn} className="text-4xl"><FcGoogle /></button>
-                                    <button type="button" onClick={handleGithubSignIn} className="text-4xl"><FaGithub /></button>
+                                    {/* <button type="button" onClick={handleGithubSignIn} className="text-4xl"><FaGithub /></button> */}
                                 </div>
                             </div>
 

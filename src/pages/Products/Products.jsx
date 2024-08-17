@@ -21,6 +21,8 @@ const Products = () => {
     const numberOfPages = Math.ceil(count / itemsPerPage);
     const pages = [...Array(numberOfPages).keys()].map(e => e + 1);
 
+    console.log(Products);
+
     const handlePrev = () => {
         if (currentPage > 1) {
             setCurrentPage(currentPage - 1);
@@ -144,6 +146,7 @@ const Products = () => {
                         <option value="" selected>Sort By</option>
                         <option value="High to low">High to Low</option>
                         <option value="Low to high">Low to High</option>
+                        <option value="Newest Product">Newest Product</option>
                     </select>
                 </div>
             </div>
@@ -156,9 +159,9 @@ const Products = () => {
                             <img src={p.productImage} className="" />
                             <div>
                                 <h2 className="md:text-[16px] text-[12px] font-bold text-center px-2 pt-1">
-                                    {p.productName.length > 22 ? `${p.productName.slice(0, 22)}...` : p.productName}
+                                    {p.productName.length > 21 ? `${p.productName.slice(0, 21)}...` : p.productName}
                                 </h2>
-                                <p className='text-center font-semibold py-1 lg:text-xl'>
+                                <p className='text-center font- py-1 lg:text-xl'>
                                     Brand: {p.brand}
                                 </p>
                                 <p className='text-center font-mono font-semibold py-1 absolute bottom-14 md:left-16 left-7'>
