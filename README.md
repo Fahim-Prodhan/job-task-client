@@ -16,8 +16,6 @@
 Create a `.env.local` file in the root directory of your project and add the following environment variables:
 
 ```plaintext
-NEXT_PUBLIC_API_BASE_URL=your_api_base_url
-
 VITE_APIKEY=your_firebase_api_key
 VITE_AUTHDOMAIN=your_firebase_auth_domain
 VITE_PROJECTID=your_firebase_project_id
